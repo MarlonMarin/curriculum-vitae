@@ -1,3 +1,4 @@
+/*  HTML Elemnts  */
 body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,14 +6,13 @@ body{
 p{
     font-family: serif;
 }
-/*---------------------class-----------------------*/
+/*  General class  */
 .toRight{
     float: right;
     width: 80%;
 }
 .darkness{
     background-color: rgba(36, 11, 59, 0.322);
-   /* background-color: rgba(0, 0, 0, 0.5) ;*/
     background-size: cover !important;
     background-position: center;
     position: absolute;
@@ -25,6 +25,7 @@ p{
 }
 
 /*--------------------- SideBAR--------------------*/
+/*  IDs  */
 #sideBar{
     color: white;
     display: block;
@@ -52,20 +53,22 @@ p{
     font-size: 30px;
     list-style:none;
 }
+/*  Class  */
 .whitoutDescoration{
     color: white;
     text-decoration:none;
 }
+
 /*----------------------cover page--------------------*/
+/*  IDs  */
 #coverPage{
-    background: url(./image/HomePageImage.jpeg);
+    background: url(./images/HomePageImage.jpeg);
     background-size: cover !important;
     background-position: center;
     height: 100vh;
 }
 #personalIfoCont{
     display: flex;
-    align-items: center;
     height: 100%;
 }
 #personalInfo{
@@ -83,37 +86,15 @@ p{
 #name{
     margin-left: 10px;
 }
+#
 /*--------------------about ME--------------------*/
+/*  IDs  */
 #aboutMe{
     background: rgba(27, 10, 42, 0.1);
-}/*
-hr{
-    border-color: #B45F04;
-    border-style: outset;
-    border-width: 7px; 
-}*/
-.tittleCont{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
-.tittle{
-    font-size: 30px;
-    border-bottom: solid 3px ;
-    border-color: #B45F04;
-    display: flex;
-    justify-content: center;
-    color: black;
-}
-.tittle h4{
-    margin: 10px;
 }
 #aboutMeCont{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 #retrato{
     float: left;
@@ -122,7 +103,6 @@ hr{
     margin-top: 30px;
     text-align: center;
 }
-
 #retratoText{
     font-size: 1.8em;
     margin-block-start: 1em;
@@ -149,40 +129,72 @@ hr{
     height: max-content;
     float: right;
 }
-.personalInfoLeft{
-    margin-left: 10px;
-    float: left;
-    display: flex;
-    width: 40%;
-}
-.personalInfoLeft h4{
-    margin-left: 20px;
-    font-size: 1em;
-}
-.personalInfoRight{
-    margin-left: 10px;
-    float: right;
-    display: flex;
-    width: 40%;
-}
-.personalInfoRight h4{
-    margin-left: 20px;
-    font-size: 1em;
+#date {
+    width: 45%
 }
 #icon{
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 12%;
     background: #4B088A;
     padding: 10px;
     margin: 10px;
-}
-#descriptionCont p{
-    margin-left: 30px;
+    float: left;
 }
 #separation{
     height: 10%;
 }
+/*  Class  */
+.tittleCont{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+.tittle{
+    font-size: 30px;
+    border-bottom: solid 3px ;
+    border-color: #B45F04;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.personalInfoLeft{
+    margin-left: 10px;
+    float: left;
+    width: 40%;
+}
+.personalInfoRight{
+    margin-left: 10px;
+    float: right;
+    width: 40%;
+}
+/*  Items  */
+#descriptionCont p{
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 1em;
+}
+#descriptionCont p:hover{
+    font-size: 1.04em;
+}
+.tittle h4{
+    margin: 10px;
+}
+.personalInfoRight h4{
+    margin-left: 20px;
+    width: content;
+    font-size: 1em;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.personalInfoLeft h4{
+    margin-left: 20px;
+    font-size: 1em;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
 /*--------------------------portfolio-----------------------*/
+/*  IDs  */
 #portfolioCont{
 	display: flex;
 	justify-content: space-around;
@@ -196,34 +208,33 @@ hr{
 	height: 10%;
 	
 }
-#portfolioBar button{
-    margin-top: 3%;
-	background: none;
-	border: none;
-    font-size: 2EM;
-    color: #4B088A;
-	
-}
-#portfolioBar button:hover {
-    color:  #B45F04;
-    cursor: pointer;
-}
 #portfolioPage{
     margin-left: 10%;
     margin-top: 10%;
     align-content: center;
     margin-bottom: 5%;
 }
-#portfolioPage :hover {
-    border: 3px solid #4B088A;
-
+/* Items */
+#portfolioBar button{
+    margin-top: 3%;
+    background: none;
+    border: none;
+    font-size: 2EM;
+    color: #4B088A;
 }
-
 #portfolioPage img {
     width :600px;
     height:auto;
     margin: 10px;
 }
+#portfolioPage :hover {
+    border: 3px solid #4B088A;
+}
+#portfolioBar button:hover {
+    color:  #B45F04;
+    cursor: pointer;
+}
+/*class */
 .tittle2{
     font-size: 30px;
     border: solid 3px ;
@@ -236,21 +247,22 @@ hr{
     text-align: center;
 }
 /*----------------skills---------------*/
-
+/*  IDs  */
 #skills{
     background: rgba(27, 10, 42, 0.1);
-}
-.transSkillsCont{
-    display: flex;
-    flex-direction: row;
-    color: black;
-	text-align: center;
 }
 #skillsProgramation{
     display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
     color: white;
+}
+/* Class */
+.transSkillsCont{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
 }
 .block{
 	display: flex;
@@ -264,25 +276,12 @@ hr{
 	width: 40%;
 	padding: 2%;
 }
-
-.block:hover {
-    border: 3px solid #4B088A;
-	cursor: pointer;
-}
 .porcentaje{
 	width: 200px;
 	height: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.block:hover {
+    border: 3px solid #4B088A;
+    cursor: pointer;
+}
 
