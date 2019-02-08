@@ -1,0 +1,288 @@
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: serif;
+}
+/*---------------------class-----------------------*/
+.toRight{
+    float: right;
+    width: 80%;
+}
+.darkness{
+    background-color: rgba(36, 11, 59, 0.322);
+   /* background-color: rgba(0, 0, 0, 0.5) ;*/
+    background-size: cover !important;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+/*--------------------- SideBAR--------------------*/
+#sideBar{
+    color: white;
+    display: block;
+}
+#sideBarCont{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    background: #B45F04;
+}
+#sideBarLogo{
+    width: 100%;
+}
+#sideMenu{
+    
+    font-size: 30px;
+    list-style:none;
+}
+.whitoutDescoration{
+    color: white;
+    text-decoration:none;
+}
+/*----------------------cover page--------------------*/
+#coverPage{
+    background: url(./image/HomePageImage.jpeg);
+    background-size: cover !important;
+    background-position: center;
+    height: 100vh;
+}
+#personalIfoCont{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#personalInfo{
+    color: white;
+    padding: 0 60px;
+}
+#personalInfo h1{
+    font-size: 5em;
+    margin-block-start: -0.4em;
+    margin-block-end: -0.3em	;
+}
+#personalInfo h2{
+    font-size: 2em;
+}
+#name{
+    margin-left: 10px;
+}
+/*--------------------about ME--------------------*/
+#aboutMe{
+    background: rgba(27, 10, 42, 0.1);
+}/*
+hr{
+    border-color: #B45F04;
+    border-style: outset;
+    border-width: 7px; 
+}*/
+.tittleCont{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.tittle{
+    font-size: 30px;
+    border-bottom: solid 3px ;
+    border-color: #B45F04;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.tittle h4{
+    margin: 10px;
+}
+#aboutMeCont{
+    display: flex;
+    flex-direction: row;
+    
+}
+#retrato{
+    float: left;
+    width: 30%;
+    margin-left: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#retratoText{
+    font-size: 1.8em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: #4B088A;
+}
+#retratoTextH{
+    font-size: 2.5em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: #4B088A;
+}
+#photo{
+    border-radius: 100%;
+    border: solid 4px;
+    border-color: #B45F04;
+    width: 100%;
+}
+
+#personalInfoCont{
+    margin-top: 10%;
+    width: 56%;
+    margin-left: 5%;
+    height: max-content;
+    float: right;
+}
+.personalInfoLeft{
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    width: 40%;
+}
+.personalInfoLeft h4{
+    margin-left: 20px;
+    font-size: 1em;
+}
+.personalInfoRight{
+    margin-left: 10px;
+    float: right;
+    display: flex;
+    width: 40%;
+}
+.personalInfoRight h4{
+    margin-left: 20px;
+    font-size: 1em;
+}
+#icon{
+    width: 5%;
+    height: 5%;
+    background: #4B088A;
+    padding: 10px;
+    margin: 10px;
+}
+#descriptionCont p{
+    margin-left: 30px;
+}
+#separation{
+    height: 10%;
+}
+/*--------------------------portfolio-----------------------*/
+#portfolioCont{
+	display: flex;
+	justify-content: space-around;
+    margin-top: 40px; 
+}
+#portfolioBar{
+	display: flex;
+	position: absolute;
+	justify-content: space-around;
+	width: 50%;
+	height: 10%;
+	
+}
+#portfolioBar button{
+    margin-top: 3%;
+	background: none;
+	border: none;
+    font-size: 2EM;
+    color: #4B088A;
+	
+}
+#portfolioBar button:hover {
+    color:  #B45F04;
+    cursor: pointer;
+}
+#portfolioPage{
+    margin-left: 10%;
+    margin-top: 10%;
+    align-content: center;
+    margin-bottom: 5%;
+}
+#portfolioPage :hover {
+    border: 3px solid #4B088A;
+
+}
+
+#portfolioPage img {
+    width :600px;
+    height:auto;
+    margin: 10px;
+}
+.tittle2{
+    font-size: 30px;
+    border: solid 3px ;
+    border-color: #B45F04;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    border-color: #B45F04;
+    color: black;
+    text-align: center;
+}
+/*----------------skills---------------*/
+
+#skills{
+    background: rgba(27, 10, 42, 0.1);
+}
+.transSkillsCont{
+    display: flex;
+    flex-direction: row;
+    color: black;
+	text-align: center;
+}
+#skillsProgramation{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    color: white;
+}
+.block{
+	display: flex;
+	flex-direction: row;
+    background: #FFBF00;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 30px;
+    margin: 10px;
+	justify-content: space-around;
+	width: 40%;
+	padding: 2%;
+}
+
+.block:hover {
+    border: 3px solid #4B088A;
+	cursor: pointer;
+}
+.porcentaje{
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
