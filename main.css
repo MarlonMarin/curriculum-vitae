@@ -208,7 +208,7 @@ p{
 	height: 10%;
 	
 }
-#portfolioPage{
+#portfolioGalery{
     margin-left: 10%;
     margin-top: 10%;
     align-content: center;
@@ -222,13 +222,15 @@ p{
     font-size: 2EM;
     color: #4B088A;
 }
-#portfolioPage img {
+#portfolioGalery img {
     width :600px;
     height:auto;
     margin: 10px;
+    float: right;
 }
-#portfolioPage :hover {
+#portfolioGalery img:hover {
     border: 3px solid #4B088A;
+    background: rgba(27, 10, 42, 0.1);
 }
 #portfolioBar button:hover {
     color:  #B45F04;
