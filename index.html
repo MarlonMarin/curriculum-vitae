@@ -6,7 +6,16 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- jQuery -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- own scripts -->
+    <script src="./js/main.js"></script>
+    <!-- external scripts -->
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.knob.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    
+
 </head>
 <body>
 <!-- ___________________________sideBar ___________________________-->
@@ -126,62 +135,82 @@
                 <button>videogames</button>
             </div>
             <div id="portfolioGalery">
-                <img src="./portfolio/3D/llanta_marlon.jpg" alt="">
-                <img src="./portfolio/3D/Untitled-1.jpg" alt="">
-                <img src="./portfolio/3D/she.jpg" alt="">
-                <img src="./portfolio/3D/diablo.jpg" alt="">
-                <img src="./portfolio/3D/books.jpg" alt="">
-                <img src="./portfolio/3D/hands.jpg" alt="">
-                <img src="./portfolio/photo/Natalia.png" alt="">
+                <div id="GaleryRow1">
+                    <a data-fancybox="gallery" href="./portfolio/3D/llanta_marlon.jpg">
+                        <img src="./portfolio/3D/llanta_marlon.jpg" alt=""></a>
+
+                    <a data-fancybox="gallery" href="./portfolio/3D/Untitled-1.jpg">
+                        <img src="./portfolio/3D/Untitled-1.jpg" alt=""></a>
+                    
+                    <a data-fancybox="gallery" href="./portfolio/3D/she.jpg">
+                        <img src="./portfolio/3D/she.jpg" alt=""></a>
+
+                        <a data-fancybox="gallery" href="./portfolio/photo/Natalia.png">
+                    <img src="./portfolio/photo/Natalia.png" alt=""></a>
+                </div>
+                <div id="GaleryRow2">
+                    <a data-fancybox="gallery" href="./portfolio/3D/diablo.jpg">
+                        <img src="./portfolio/3D/diablo.jpg" alt=""></a>
+
+                    <a data-fancybox="gallery" href="./portfolio/3D/books.jpg">
+                        <img src="./portfolio/3D/books.jpg" alt=""></a>
+
+                    <a data-fancybox="gallery" href="./portfolio/3D/hands.jpg">
+                        <img src="./portfolio/3D/hands.jpg" alt=""></a>
+
+
+                </div>
                 
             </div>
         </div>
     </section>
     <!-- __________________________ skills _________________________-->
-<!--
     <section id="skills" class="toRight" name="skills">
             <div class="tittleCont">
-                <div class="tittle2"><h4>TRANSFERABLE SKILLS</h4></div>  
+                <div class="tittle2"><h4>SKILLS</h4></div>  
             </div>
-            <hr>
-                <div class="transSkillsCont">
-                    <div class="block">
-                        <h4>comunication</h4>
-                        <img src="./icons/80.png" class="porcentaje" id="icoFrontend">
-                    </div>
+            <div id="TRANSFERABLESKILLS">
+                    <div class="subTittle"><h4>TRANSFERABLE SKILLS</h4></div>
                     <br>
-                    <div class="block">
-                        <h4>Team Work</h4>
-                        <img src="./icons/100.png" class="porcentaje" id="icoFrontend">
-                    </div>
-                    <br>
-                    <div class="block">
-                        <h4>english</h4>  
-                        <img src="./icons/50.png" class="porcentaje" id="icoFrontend">
+                    <div id="skillsColumnR">
+                        <div class="block">
+                            <h4>comunication</h4>
+                            <input type="text" value="80" class="circle">
+                        </div>
+                        <div class="block">
+                            <h4>Team Work</h4>
+                            <input type="text" value="100" class="circle">
+                        </div>
+
+                        <div class="block">
+                            <h4>english</h4>  
+                            <input type="text" value="50" class="circle">
+                        </div>
                     </div>
                 </div>
-            <div class="tittleCont">
-                <div class="tittle2"><h4>MARKETABLE SKILLS</h4></div></div>
-                <div id="skillsCont">
-					<hr>
-                    <div class="transSkillsCont">
- -->
-                        <!--<div>Developer Skills</div>-->
- <!--
-                       <div id="textFrontend" class="block" >
-                            <h4>frontend</h4>
-                            <img src="./icons/60.png" class="porcentaje" id="icoFrontend">
+                <div id="TRANSFERABLESKILLS">
+                    <div class="subTittle"><h4>MARKETABLE SKILLS</h4></div>
+                    <br>
+                    <div id="skillsColumnR">
+                        <div class="block">
+                            <h4>Frontend</h4>
+                            <input type="text" value="70" class="circle">
                         </div>
-                        <div id="textBackend" class="block">
-                            <h4>backend</h4>
-                            <img src="./icons/70.png" class="porcentaje" id="icoBackend">
+                        <div class="block">
+                            <h4>Backend</h4>
+                            <input type="text" value="50" class="circle">
                         </div>
-                        <div id="textVideogames" class="block">
-                            <h4>videogames</h4>
-                            <img src="./icons/80.png" class="porcentaje">
+
+                        <div class="block">
+                            <h4>Video Games</h4>  
+                            <input type="text" value="80" class="circle">
                         </div>
                     </div>
--->					<!--
+                </div>
+                
+            <div id="skillsCont">
+                
+					<!--
                 <div class="transSkillsCont">
                     <div >Databases</div>
                     <div id="textMongoDB" class="block">
@@ -210,13 +239,10 @@
                     <div id="text3D" class="block">
                         <h4>3D</h4>
                         <img src="./icons/90.png" class="porcentaje" id="icojavascript">
-                    </div>
+                    </div> -->
                 </div>
-					-->
-<!--
             </div>
     </section>
--->
 <!-- __________________________ contact _________________________-->
 <!--
         <section id="contact" class="toRight" name="contact">

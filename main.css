@@ -86,7 +86,6 @@ p{
 #name{
     margin-left: 10px;
 }
-#
 /*--------------------about ME--------------------*/
 /*  IDs  */
 #aboutMe{
@@ -209,11 +208,24 @@ p{
 	
 }
 #portfolioGalery{
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10%;
     align-content: center;
     margin-bottom: 5%;
 }
+#GaleryRow1{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+#GaleryRow2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
 /* Items */
 #portfolioBar button{
     margin-top: 3%;
@@ -222,13 +234,13 @@ p{
     font-size: 2EM;
     color: #4B088A;
 }
-#portfolioGalery img {
-    width :600px;
+#GaleryRow1 img, #GaleryRow2 img {
+    width :520px;
     height:auto;
     margin: 10px;
     float: right;
 }
-#portfolioGalery img:hover {
+#GaleryRow1 img:hover, #GaleryRow2 img:hover{
     border: 3px solid #4B088A;
     background: rgba(27, 10, 42, 0.1);
 }
@@ -239,7 +251,7 @@ p{
 /*class */
 .tittle2{
     font-size: 30px;
-    border: solid 3px ;
+    border-bottom: solid 3px ;
     border-color: #B45F04;
     display: flex;
     width: 20%;
@@ -252,6 +264,13 @@ p{
 /*  IDs  */
 #skills{
     background: rgba(27, 10, 42, 0.1);
+    padding-bottom: 30px;
+}
+#TRANSFERABLESKILLS{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #skillsProgramation{
     display: flex;
@@ -259,31 +278,41 @@ p{
 	flex-wrap: wrap;
     color: white;
 }
-/* Class */
-.transSkillsCont{
+#skillsColumnR{
     display: flex;
-    flex-direction: row;
-    color: black;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+/* Class */
+.subTittle{
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
     text-align: center;
+    color: black;
+    border-bottom: solid 3px ;
+    border-color: #4B088A;
+    height: 10%;
+}
+.transSkillsCont{
+    margin-top: 40px;
+    margin-left: 5%;
+    flex-direction: row;
 }
 .block{
-	display: flex;
-	flex-direction: row;
-    background: #FFBF00;
+    margin: 20px;
+    padding: 2%;
+    font-size: 15px;
+    color: black;
     text-align: center;
-    font-size: 2em;
-    border-radius: 30px;
-    margin: 10px;
-	justify-content: space-around;
-	width: 40%;
-	padding: 2%;
+    border-bottom:solid 3px;
+    border-color: #4B088A;
 }
 .porcentaje{
 	width: 200px;
 	height: 200px;
 }
-.block:hover {
-    border: 3px solid #4B088A;
-    cursor: pointer;
-}
+
 
